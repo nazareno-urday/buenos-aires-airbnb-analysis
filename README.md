@@ -50,11 +50,8 @@ Inside Airbnb offers free data for the last 12 months. Once this snapshot is no 
 ```text
 ├── assets/         README images
 ├── data/
-│   ├── raw/        Source files, not tracked by Git
-│   └── processed/  Derived datasets, not tracked by Git
+│   └── raw/        Source files, not tracked by Git
 ├── notebooks/      Analysis notebooks
-├── reports/
-│   └── figures/    Exported charts
 └── pyproject.toml  Project metadata and dependencies
 ```
 

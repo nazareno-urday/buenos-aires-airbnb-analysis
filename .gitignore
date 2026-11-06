@@ -1,8 +1,6 @@
 # Data: Inside Airbnb asks not to republish it
 data/raw/*
-data/processed/*
 !data/raw/.gitkeep
-!data/processed/.gitkeep
 
 # Python
 .venv/
