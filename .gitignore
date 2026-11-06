@@ -1,0 +1,14 @@
+# Data: Inside Airbnb asks not to republish it
+data/
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# PyCharm
+.idea/
