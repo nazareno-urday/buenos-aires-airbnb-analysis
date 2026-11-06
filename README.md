@@ -41,7 +41,9 @@ The data is messy by nature. Prices are stored as formatted text, amenities as e
 
 ### Getting the data
 
-The data is not stored in this repository, in line with Inside Airbnb's [request not to republish it](https://insideairbnb.com/data-policies/). To reproduce the analysis, download the three files from the Buenos Aires section of the [Inside Airbnb data page](https://insideairbnb.com/get-the-data/) into `data/raw/`, without decompressing them.
+`listings.csv.gz` and `calendar.csv.gz` are included in `data/raw/`, so the notebook runs right after cloning. Inside Airbnb publishes the data under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), which allows redistribution with attribution (see [Attribution](#attribution)).
+
+`reviews.csv.gz` (129 MB) is not tracked because it exceeds GitHub's 100 MB file limit. To use it, download it from the Buenos Aires section of the [Inside Airbnb data page](https://insideairbnb.com/get-the-data/) into `data/raw/`, without decompressing it.
 
 Inside Airbnb offers free data for the last 12 months. Once this snapshot is no longer listed, it must be requested through their archived data process, and a newer snapshot may give different results.
 
@@ -50,7 +52,7 @@ Inside Airbnb offers free data for the last 12 months. Once this snapshot is no 
 ```text
 ├── assets/         README images
 ├── data/
-│   └── raw/        Source files, not tracked by Git
+│   └── raw/        Source files (reviews.csv.gz is not tracked)
 ├── notebooks/      Analysis notebooks
 └── pyproject.toml  Project metadata and dependencies
 ```
