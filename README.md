@@ -41,9 +41,32 @@ The data is messy by nature. Prices are stored as formatted text, amenities as e
 
 ### Getting the data
 
-The data is not stored in this repository, in line with Inside Airbnb's [request not to republish it](https://insideairbnb.com/data-policies/). To reproduce the analysis, download the three files from the Buenos Aires section of the [Inside Airbnb data page](https://insideairbnb.com/get-the-data/).
+The data is not stored in this repository, in line with Inside Airbnb's [request not to republish it](https://insideairbnb.com/data-policies/). To reproduce the analysis, download the three files from the Buenos Aires section of the [Inside Airbnb data page](https://insideairbnb.com/get-the-data/) into `data/raw/`, without decompressing them.
 
 Inside Airbnb offers free data for the last 12 months. Once this snapshot is no longer listed, it must be requested through their archived data process, and a newer snapshot may give different results.
+
+## Project Structure
+
+```text
+├── assets/         README images
+├── data/
+│   ├── raw/        Source files, not tracked by Git
+│   └── processed/  Derived datasets, not tracked by Git
+├── notebooks/      Analysis notebooks
+├── reports/
+│   └── figures/    Exported charts
+└── pyproject.toml  Project metadata and dependencies
+```
+
+## Setup
+
+Requires Python 3.13 or later. On Windows:
+
+```powershell
+python -m venv .venv
+.venv\Scripts\python -m pip install -e ".[dev]"
+.venv\Scripts\jupyter lab
+```
 
 ## Approach
 
