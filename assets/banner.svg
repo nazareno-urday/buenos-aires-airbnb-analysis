@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">Buenos Aires Short-Term Rentals</title>
+  <desc id="desc">Project banner with the title over an abstract city skyline at dusk.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#101d33"/>
+      <stop offset="0.65" stop-color="#1d3557"/>
+      <stop offset="1" stop-color="#3f6c8f"/>
+    </linearGradient>
+    <pattern id="windows" width="18" height="22" patternUnits="userSpaceOnUse">
+      <rect x="5" y="6" width="7" height="9" fill="#f4c95d" opacity="0.55"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="360" fill="url(#sky)"/>
+  <circle cx="1040" cy="82" r="38" fill="#f4c95d" opacity="0.9"/>
+
+  <!-- Distant skyline -->
+  <g fill="#27496d">
+    <rect x="0" y="240" width="90" height="120"/>
+    <rect x="80" y="210" width="70" height="150"/>
+    <rect x="145" y="250" width="110" height="110"/>
+    <rect x="250" y="225" width="80" height="135"/>
+    <rect x="325" y="255" width="120" height="105"/>
+    <rect x="440" y="235" width="75" height="125"/>
+    <rect x="510" y="260" width="130" height="100"/>
+    <rect x="635" y="225" width="85" height="135"/>
+    <rect x="715" y="200" width="70" height="160"/>
+    <rect x="780" y="235" width="115" height="125"/>
+    <rect x="890" y="190" width="80" height="170"/>
+    <rect x="965" y="225" width="110" height="135"/>
+    <rect x="1070" y="205" width="130" height="155"/>
+  </g>
+
+  <!-- Near skyline, drawn on the right so the title stays readable -->
+  <g fill="#0b1626">
+    <rect x="640" y="285" width="85" height="75"/>
+    <rect x="720" y="245" width="70" height="115"/>
+    <rect x="785" y="275" width="95" height="85"/>
+    <rect x="875" y="225" width="75" height="135"/>
+    <rect x="945" y="265" width="90" height="95"/>
+    <rect x="1030" y="235" width="80" height="125"/>
+    <rect x="1105" y="270" width="95" height="90"/>
+    <polygon points="908,225 914,165 920,225"/>
+  </g>
+  <g fill="url(#windows)">
+    <rect x="720" y="245" width="70" height="115"/>
+    <rect x="875" y="225" width="75" height="135"/>
+    <rect x="1030" y="235" width="80" height="125"/>
+  </g>
+
+  <rect y="346" width="1200" height="14" fill="#0b1626"/>
+
+  <!-- Title -->
+  <g font-family="'Segoe UI', Helvetica, Arial, sans-serif">
+    <text x="64" y="118" fill="#f4c95d" font-size="20" font-weight="600" letter-spacing="3">DATA SCIENCE PROJECT</text>
+    <text x="64" y="172" fill="#ffffff" font-size="50" font-weight="700">Buenos Aires</text>
+    <text x="64" y="228" fill="#ffffff" font-size="50" font-weight="700">Short-Term Rentals</text>
+    <text x="64" y="272" fill="#d7e3ee" font-size="22">Prices, hosts, and reviews in Python and pandas</text>
+  </g>
+</svg>
