@@ -1,5 +1,5 @@
-# Data: Inside Airbnb asks not to republish it
-data/
+# Data: reviews.csv.gz is >100MB, over GitHub's file size limit
+data/raw/reviews.csv.gz
 
 # Python
 .venv/
